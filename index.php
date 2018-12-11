@@ -5,6 +5,7 @@
 </head>
 <body>
 	<h1>Hola</h1>
+	<? echo "hola"; ?>
 	<!--
 	//$db = new PDO('mysql:host=localhost;dbname=TaskList;charset=utf8mb4', 'Admin', 'Admin');
 
