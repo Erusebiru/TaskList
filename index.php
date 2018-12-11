@@ -18,7 +18,7 @@
 	    $database["pass"],
 	    ltrim($database["path"], "/")
 	));
-	/*
+	
 	if(isset($_GET['Done'])){
 		$query = $db->prepare("UPDATE TaskList SET state = 1 WHERE id = ".$_GET['Done'].";");
 		$query->execute();
@@ -37,7 +37,7 @@
 		}
 		$query->execute();
 	}
-*/
+
 	$notdone = $db->query("SELECT * FROM tasklist WHERE state = 0");
 	$done = $db->query("SELECT * FROM tasklist WHERE state = 1");
 
