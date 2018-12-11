@@ -4,12 +4,11 @@
 	<title>Tasklist</title>
 </head>
 <body>
-	<h1>Hola</h1>
-	<? echo "hola"; ?>
-	<!--
+	<?
+
 	//$db = new PDO('mysql:host=localhost;dbname=TaskList;charset=utf8mb4', 'Admin', 'Admin');
 
-	/*$database = parse_url(getenv("DATABASE_URL"));
+	$database = parse_url(getenv("DATABASE_URL"));
 
 	$db = new PDO("pgsql:" . sprintf(
 	    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
@@ -19,7 +18,7 @@
 	    $database["pass"],
 	    ltrim($database["path"], "/")
 	));
-	
+	/*
 	if(isset($_GET['Done'])){
 		$query = $db->prepare("UPDATE TaskList SET state = 1 WHERE id = ".$_GET['Done'].";");
 		$query->execute();
@@ -38,7 +37,7 @@
 		}
 		$query->execute();
 	}
-
+*/
 	$notdone = $db->query("SELECT * FROM tasklist WHERE state = 0");
 	$done = $db->query("SELECT * FROM tasklist WHERE state = 1");
 
@@ -51,7 +50,7 @@
 		<b>Tareas por hacer: <br></b>
 		<ul>
 
-		<?/*
+		<?
 		foreach($notdone as $row){
 			echo "<li>" . $row['task']." <a href='?Done=".$row['id']."'>Done</a> <a href='?delete=".$row['id']."'>Delete</a></li><br>";
 		}
@@ -67,8 +66,6 @@
 		}
 ?>
 		</ul>
-		*/
-		?>
--->
+		
 </body>
 </html>
