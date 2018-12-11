@@ -5,10 +5,10 @@
 </head>
 <body>
 	<?
-
+	echo "FUNCIONA";
 	//$db = new PDO('mysql:host=localhost;dbname=TaskList;charset=utf8mb4', 'Admin', 'Admin');
 
-	$database = parse_url(getenv("DATABASE_URL"));
+	/*$database = parse_url(getenv("DATABASE_URL"));
 
 	$db = new PDO("pgsql:" . sprintf(
 	    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
@@ -66,6 +66,7 @@
 		}
 ?>
 		</ul>
-		
+		*/
+		?>
 </body>
 </html>
