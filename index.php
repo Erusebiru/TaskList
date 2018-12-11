@@ -4,8 +4,8 @@
 	<title>Tasklist</title>
 </head>
 <body>
-	<?
-	echo "FUNCIONA";
+	<h1>Hola</h1>
+	<!--
 	//$db = new PDO('mysql:host=localhost;dbname=TaskList;charset=utf8mb4', 'Admin', 'Admin');
 
 	/*$database = parse_url(getenv("DATABASE_URL"));
@@ -50,7 +50,7 @@
 		<b>Tareas por hacer: <br></b>
 		<ul>
 
-		<?
+		<?/*
 		foreach($notdone as $row){
 			echo "<li>" . $row['task']." <a href='?Done=".$row['id']."'>Done</a> <a href='?delete=".$row['id']."'>Delete</a></li><br>";
 		}
@@ -68,5 +68,6 @@
 		</ul>
 		*/
 		?>
+-->
 </body>
 </html>
