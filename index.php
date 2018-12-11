@@ -29,7 +29,6 @@
 		$query = $db->prepare("DELETE FROM TaskList WHERE id = ".$_GET['delete'].";");
 		$query->execute();
 	}else if(isset($_GET['newtask'])){
-		print_r($_GET);
 		$query = $db->prepare("INSERT INTO TaskList (task,state) VALUES ('".$_GET['newtask']."',0)");
 		if (!$query) {
     		echo "\nPDO::errorInfo():\n";
